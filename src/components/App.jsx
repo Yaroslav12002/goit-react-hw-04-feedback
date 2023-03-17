@@ -9,6 +9,7 @@ export function App() {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
+  const options = ['good', 'neutral', 'bad'];
 
   const countTotalFeedback = () => {
     return good + neutral + bad;
@@ -38,8 +39,6 @@ export function App() {
     }
   };
 
-  // const options = Object.keys(this.state);
-  const options = ['good', 'neutral', 'bad'];
   return (
     <Container>
       <Section title="Please leave feedback">
